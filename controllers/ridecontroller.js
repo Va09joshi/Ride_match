@@ -173,34 +173,46 @@ exports.requestRide = async (req, res) => {
 // -------------------------------------------------------
 // DRIVER ACCEPT / REJECT REQUEST
 // -------------------------------------------------------
+
 exports.respondToRequest = async (req, res) => {
   try {
     const { rideId } = req.params;
     const { userId, status } = req.body;
 
-    if (!isValidId(rideId) || !isValidId(userId)) {
+    if (!rideId || !userId) {
       return res.status(400).json({ success: false, message: "Invalid rideId or userId" });
     }
 
     const request = await RideRequest.findOne({ rideId, userId });
-    if (!request)
-      return res.status(404).json({ success: false, message: "Request not found" });
+    if (!request) return res.status(404).json({ success: false, message: "Request not found" });
 
     request.status = status;
     await request.save();
+
+    // 🔹 Emit chatPermissionUpdated if accepted
+    if (status === "accepted" && io) {
+      // senderId: the requester, receiverId: driver (who accepted)
+      const receiverId = request.userId.toString(); // original requester
+      const senderId = userId; // driver who accepted
+
+      const socketId = users[receiverId]; // optional: track online users in memory
+      io.to(socketId).emit('chatPermissionUpdated', {
+        senderId,
+        receiverId,
+        status: 'accepted'
+      });
+    }
 
     res.status(200).json({
       success: true,
       message: `Request ${status} successfully`,
       request
     });
-
   } catch (error) {
     console.error('Error updating request:', error);
     res.status(500).json({ success: false, message: 'Server error', error });
   }
 };
-
 // -------------------------------------------------------
 // GET USER'S OWN REQUESTS
 // -------------------------------------------------------
