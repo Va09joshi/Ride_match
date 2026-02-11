@@ -1,6 +1,8 @@
 const Ride = require('../models/Ride');
 const RideRequest = require('../models/RideRequest');
 const mongoose = require("mongoose");
+const io = require('../server').io; // Make sure your server exports io
+
 
 // Utility function to validate ObjectId
 const isValidId = (id) =>
