@@ -68,7 +68,7 @@ exports.getRides = async (req, res) => {
 // -------------------------------------------------------
 exports.getNearbyRides = async (req, res) => {
   try {
-    const { longitude, latitude, maxDistance = 10000 } = req.query;
+    const { longitude, latitude, maxDistance = 100000 } = req.query;
 
     if (!longitude || !latitude) {
       return res.status(400).json({
