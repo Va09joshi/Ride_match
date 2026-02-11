@@ -79,68 +79,61 @@ io.on('connection', (socket) => {
   //  🔥 MESSAGE SENDING LOGIC
   // ------------------------
   socket.on('sendMessage', async (data) => {
-    const { senderId, receiverId, message } = data;
-    console.log(`💬 ${senderId} -> ${receiverId}: ${message}`);
+  const { senderId, receiverId, message } = data;
+  console.log(`💬 ${senderId} -> ${receiverId}: ${message}`);
 
-    try {
-      // Fetch sender and receiver
-      const sender = await User.findById(senderId);
-      const receiver = await User.findById(receiverId);
+  try {
+    const sender = await User.findById(senderId);
+    const receiver = await User.findById(receiverId);
 
-      if (!sender || !receiver) {
-        console.log('❌ Sender or receiver not found');
-        return;
-      }
+    if (!sender || !receiver) return console.log('❌ Sender or receiver not found');
 
-      // 1️⃣ Save message to DB
-      const newMessage = await Message.create({
-        senderId,
-        senderName: sender.name,
-        receiverId,
-        receiverName: receiver.name,
-        message,
+    // Save message to DB
+    const newMessage = await Message.create({
+      senderId,
+      senderName: sender.name,
+      receiverId,
+      receiverName: receiver.name,
+      message,
+    });
+
+    // Find or create chat
+    let chat = await Chat.findOne({ users: { $all: [senderId, receiverId] } });
+    if (!chat) {
+      chat = new Chat({
+        users: [senderId, receiverId],
+        unreadCount: { [senderId]: 0, [receiverId]: 0 }
       });
+    }
 
-      // 2️⃣ FIND OR CREATE CHAT
-      let chat = await Chat.findOne({
-        users: { $all: [senderId, receiverId] }
-      });
+    // Update chat summary
+    chat.lastMessage = message;
+    chat.lastMessageTime = new Date();
+    chat.unreadCount.set(receiverId, (chat.unreadCount.get(receiverId) || 0) + 1);
+    await chat.save();
 
-      if (!chat) {
-        chat = new Chat({
-          users: [senderId, receiverId],
-          unreadCount: {
-            [senderId]: 0,
-            [receiverId]: 0
-          }
-        });
-      }
-
-      // 3️⃣ UPDATE CHAT SUMMARY (🔥 This is what your Flutter needs)
-      chat.lastMessage = message;
-      chat.lastMessageTime = new Date();
-
-      // Increase unread count for receiver
-      chat.unreadCount.set(receiverId, (chat.unreadCount.get(receiverId) || 0) + 1);
-
-      await chat.save();
-
-      // 4️⃣ Send message to receiver if online
-      const receiverSocket = users[receiverId];
-      if (receiverSocket) {
-        io.to(receiverSocket).emit('receiveMessage', {
+    // Send to both sender and receiver
+    const socketsToNotify = [senderId, receiverId];
+    socketsToNotify.forEach(uid => {
+      const socketId = users[uid];
+      if (socketId) {
+        io.to(socketId).emit('receiveMessage', {
           senderId,
           senderName: sender.name,
+          receiverId,
           receiverName: receiver.name,
           message,
           timestamp: newMessage.createdAt,
         });
       }
+    });
 
-    } catch (err) {
-      console.error('Error saving message:', err);
-    }
-  });
+  } catch (err) {
+    console.error('Error saving message:', err);
+  }
+});
+
+  
 
   // Handle disconnect
   socket.on('disconnect', () => {
