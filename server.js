@@ -19,6 +19,8 @@ const profileRoutes = require('./routes/profileRoutes');
 const chatRoutes = require('./routes/chats');
 const chatHistoryRoutes = require('./routes/chathistory');
 const likeRoutes = require("./routes/likeRoutes");
+const messageRoutes = require("./routes/messageRoutes");
+
 
 
 
@@ -37,6 +39,8 @@ app.use('/api/auth', profileRoutes);
 app.use("/api/chathistory", chatHistoryRoutes);
 app.use("/api/like", likeRoutes);
 app.use("/api/notifications", notificationRoutes);
+app.use("/api/messages", messageRoutes);
+
 
 app.use("/api/ride-request", require("./routes/rideRequestRoutes"));
 

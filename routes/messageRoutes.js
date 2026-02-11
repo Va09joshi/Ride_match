@@ -108,4 +108,73 @@ router.put("/read/:chatId/:userId", async (req, res) => {
 });
 
 
+// ================= SEND AUTO INTRO MESSAGE =================
+router.post("/auto-intro", async (req, res) => {
+  try {
+    const { senderId, receiverId, message } = req.body;
+
+    if (!senderId || !receiverId || !message) {
+      return res.status(400).json({ success: false, message: "Missing fields" });
+    }
+
+    // 🔹 Fetch users
+    const sender = await User.findById(senderId).select("name");
+    const receiver = await User.findById(receiverId).select("name");
+
+    if (!sender || !receiver) {
+      return res.status(404).json({ success: false, message: "User not found" });
+    }
+
+    // 🔹 Find or create chat
+    let chat = await Chat.findOne({ users: { $all: [senderId, receiverId] } });
+
+    if (!chat) {
+      chat = await Chat.create({
+        users: [senderId, receiverId],
+        userNames: {
+          [senderId]: sender.name,
+          [receiverId]: receiver.name,
+        },
+        unreadCount: {
+          [senderId]: 0,
+          [receiverId]: 0,
+        },
+      });
+    }
+
+    // 🔹 Save intro message
+    const introMessage = await Message.create({
+      chatId: chat._id,
+      senderId,
+      receiverId,
+      senderName: sender.name,
+      receiverName: receiver.name,
+      message,
+      type: "text",
+    });
+
+    // 🔹 Update chat preview
+    chat.lastMessage = message;
+    chat.lastMessageTime = new Date();
+
+    const unread = chat.unreadCount.get(receiverId.toString()) || 0;
+    chat.unreadCount.set(receiverId.toString(), unread + 1);
+
+    await chat.save();
+
+    // 🔹 Emit real-time
+    const io = req.app.get("io");
+    if (io) {
+      io.to(receiverId.toString()).emit("receiveMessage", introMessage);
+    }
+
+    res.json({ success: true, data: introMessage });
+  } catch (err) {
+    console.error("Auto intro error:", err);
+    res.status(500).json({ success: false, message: err.message });
+  }
+});
+
+
+
 module.exports = router;
