@@ -2,8 +2,31 @@ const express = require('express');
 const router = express.Router();
 const Message = require('../models/Message');
 const User = require('../models/user');
+const ChatPermission = require('../models/ChatPermission'); // new model to track permissions
 
-// GET chat history between two users
+// ---------------------- CHAT PERMISSION ROUTE ----------------------
+router.get('/permission/:senderId/:receiverId', async (req, res) => {
+  const { senderId, receiverId } = req.params;
+
+  try {
+    // Look up permission in DB
+    const permission = await ChatPermission.findOne({
+      senderId,
+      receiverId
+    });
+
+    if (!permission) {
+      return res.json({ status: 'pending' }); // default if no record
+    }
+
+    res.json({ status: permission.status }); // accepted | rejected | pending
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ status: 'pending', error: 'Error checking permission' });
+  }
+});
+
+// ---------------------- CHAT HISTORY ROUTE ----------------------
 router.get('/:userA/:userB', async (req, res) => {
   const { userA, userB } = req.params;
 
