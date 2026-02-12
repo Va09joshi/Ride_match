@@ -1,217 +1,219 @@
 <div align="center">
 
-# 🚗 RideMatch
+# 𝗥𝗶𝗱𝗲𝗠𝗮𝘁𝗰𝗵
 
-### *Your Ultimate Carpool & Ridesharing Platform*
+### Your Ultimate Carpool & Ridesharing Platform
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotio&logoColor=white" alt="Socket.io" />
-</p>
+<br/>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Dart-66.2%25-00ADD8?style=flat-square&logo=dart" alt="Dart" />
-  <img src="https://img.shields.io/badge/JavaScript-20.6%25-F7DF1E?style=flat-square&logo=javascript" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/C++-6.7%25-00599C?style=flat-square&logo=cplusplus" alt="C++" />
-  <img src="https://img.shields.io/github/license/Va09joshi/Ride_match?style=flat-square" alt="License" />
-  <img src="https://img.shields.io/github/stars/Va09joshi/Ride_match?style=flat-square" alt="Stars" />
-</p>
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socketdotio&logoColor=white)
 
-<p align="center">
-  <b>A full-stack ridesharing application featuring real-time chat, location tracking, ride matching, and seamless payment integration</b>
-</p>
+<br/>
 
-<p align="center">
-  <a href="#-key-features">Features</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-installation">Installation</a> •
-  <a href="#-api-documentation">API Docs</a> •
-  <a href="#-contributing">Contributing</a> •
-  <a href="#-support">Support</a>
-</p>
+![Dart](https://img.shields.io/badge/Dart-66.2%25-00ADD8?style=flat-square&logo=dart)
+![JavaScript](https://img.shields.io/badge/JavaScript-20.6%25-F7DF1E?style=flat-square&logo=javascript)
+![C++](https://img.shields.io/badge/C++-6.7%25-00599C?style=flat-square&logo=cplusplus)
+![License](https://img.shields.io/github/license/Va09joshi/Ride_match?style=flat-square)
+![Stars](https://img.shields.io/github/stars/Va09joshi/Ride_match?style=flat-square)
 
----
+<br/>
+
+A full-stack ridesharing application featuring real-time chat, location tracking,  
+intelligent ride matching, and seamless payment integration
+
+<br/>
+
+**[𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀](#features)** • **[𝗧𝗲𝗰𝗵 𝗦𝘁𝗮𝗰𝗸](#tech-stack)** • **[𝗜𝗻𝘀𝘁𝗮𝗹𝗹𝗮𝘁𝗶𝗼𝗻](#installation)** • **[𝗔𝗣𝗜 𝗗𝗼𝗰𝘀](#api-documentation)** • **[𝗖𝗼𝗻𝘁𝗿𝗶𝗯𝘂𝘁𝗲](#contributing)**
+
+<br/>
+<br/>
 
 </div>
 
-## 🌟 Key Features
+## 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀
 
-<div align="center">
+<br/>
 
-<table>
-<tr>
-<td width="33%" align="center">
+### 𝗔𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗶𝗼𝗻 & 𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆
 
-### 🔐 **Authentication**
-Secure JWT-based<br/>signup & login
+• Secure JWT-based authentication system  
+• Password encryption with bcrypt  
+• Protected API endpoints with middleware
 
-</td>
-<td width="33%" align="center">
+<br/>
 
-### 🗺️ **Live Tracking**
-Real-time location<br/>with Google Maps
+### 𝗥𝗲𝗮𝗹-𝘁𝗶𝗺𝗲 𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻 & 𝗠𝗮𝗽𝗽𝗶𝗻𝗴
 
-</td>
-<td width="33%" align="center">
+• Live GPS tracking with Google Maps integration  
+• Distance calculation and route optimization  
+• Interactive map interface
 
-### 💬 **Real-time Chat**
-Socket.IO powered<br/>messaging system
+<br/>
 
-</td>
-</tr>
+### 𝗠𝗲𝘀𝘀𝗮𝗴𝗶𝗻𝗴 𝗦𝘆𝘀𝘁𝗲𝗺
 
-<tr>
-<td width="33%" align="center">
+• Real-time chat powered by Socket.IO  
+• Message history and conversation threads  
+• Online/offline status indicators
 
-### 🚀 **Smart Matching**
-AI-powered ride<br/>recommendation engine
+<br/>
 
-</td>
-<td width="33%" align="center">
+### 𝗦𝗺𝗮𝗿𝘁 𝗥𝗶𝗱𝗲 𝗠𝗮𝘁𝗰𝗵𝗶𝗻𝗴
 
-### 💳 **Payments**
-Integrated Razorpay<br/>payment gateway
+• Intelligent algorithm for ride recommendations  
+• Filter by location, time, and preferences  
+• Save and like favorite rides
 
-</td>
-<td width="33%" align="center">
+<br/>
 
-### ⭐ **Reviews**
-Rating & review<br/>system for drivers
+### 𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗜𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗶𝗼𝗻
 
-</td>
-</tr>
+• Secure payments via Razorpay  
+• Transaction history tracking  
+• Multiple payment methods support
 
-<tr>
-<td width="33%" align="center">
+<br/>
 
-### 🔔 **Notifications**
-Push notifications<br/>for ride updates
+### 𝗨𝘀𝗲𝗿 𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲
 
-</td>
-<td width="33%" align="center">
+• Clean Material Design interface  
+• Profile customization with image uploads  
+• Rating and review system  
+• Push notifications for ride updates
 
-### 📱 **Cross-Platform**
-Works on Android,<br/>iOS & Web
+<br/>
 
-</td>
-<td width="33%" align="center">
+### 𝗖𝗿𝗼𝘀𝘀-𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 𝗦𝘂𝗽𝗽𝗼𝗿𝘁
 
-### 🎨 **Modern UI**
-Beautiful Material<br/>Design interface
+• Native Android and iOS apps  
+• Responsive web application  
+• Consistent experience across devices
 
-</td>
-</tr>
-</table>
+<br/>
+<br/>
 
-</div>
+## 𝗧𝗲𝗰𝗵 𝗦𝘁𝗮𝗰𝗸
 
----
+<br/>
 
-## 🛠 Tech Stack
+### 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱
 
-<div align="center">
+**Framework & Language**
 
-### **Frontend**
+• Flutter 3.9.2+  
+• Dart
 
-<p>
-  <a href="https://flutter.dev/" target="_blank"><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" /></a>
-  <a href="https://dart.dev/" target="_blank"><img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" /></a>
-  <a href="https://pub.dev/packages/google_maps_flutter" target="_blank"><img src="https://img.shields.io/badge/Google_Maps-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Google Maps" /></a>
-  <a href="https://socket.io/" target="_blank"><img src="https://img.shields.io/badge/Socket.io_Client-010101?style=for-the-badge&logo=socketdotio&logoColor=white" alt="Socket.io" /></a>
-  <a href="https://razorpay.com/" target="_blank"><img src="https://img.shields.io/badge/Razorpay-02042B?style=for-the-badge&logo=razorpay&logoColor=3395FF" alt="Razorpay" /></a>
-</p>
+**Key Packages**
 
-### **Backend**
+• `google_maps_flutter` — Maps and geolocation  
+• `socket_io_client` — Real-time communication  
+• `razorpay_flutter` — Payment processing  
+• `geolocator` — GPS location services  
+• `http` — API communication  
+• `shared_preferences` — Local data storage  
+• `image_picker` — Profile image selection  
+• `cached_network_image` — Optimized image loading
 
-<p>
-  <a href="https://nodejs.org/" target="_blank"><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" /></a>
-  <a href="https://expressjs.com/" target="_blank"><img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" /></a>
-  <a href="https://www.mongodb.com/" target="_blank"><img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" /></a>
-  <a href="https://mongoosejs.com/" target="_blank"><img src="https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white" alt="Mongoose" /></a>
-  <a href="https://jwt.io/" target="_blank"><img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT" /></a>
-</p>
+<br/>
 
-### **DevOps & Tools**
+### 𝗕𝗮𝗰𝗸𝗲𝗻𝗱
 
-<p>
-  <a href="https://git-scm.com/" target="_blank"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" /></a>
-  <a href="https://github.com/" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://www.postman.com/" target="_blank"><img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" /></a>
-  <a href="https://code.visualstudio.com/" target="_blank"><img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" /></a>
-</p>
+**Runtime & Framework**
 
-</div>
+• Node.js  
+• Express.js
 
----
+**Database & ODM**
 
-## 📂 Project Architecture
+• MongoDB Atlas  
+• Mongoose
 
-<div align="center">
+**Key Packages**
+
+• `socket.io` — WebSocket server  
+• `jsonwebtoken` — JWT authentication  
+• `bcryptjs` — Password hashing  
+• `multer` — File upload handling  
+• `cors` — Cross-origin resource sharing  
+• `dotenv` — Environment configuration
+
+<br/>
+<br/>
+
+## 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲
+
+<br/>
 
 ```
-🏗️ Ride_match/
+Ride_match/
 │
-├── 📱 frontend/RideMatch/          # Flutter Mobile Application
-│   ├── 📄 lib/
-│   ���   ├── main.dart               # 🚀 App Entry Point
-│   │   ├── 🔐 views/auth/          # Login & Signup
-│   │   ├── 📊 views/dashboard/     # Main Dashboard
-│   │   ├── 💳 views/payment/       # Payment Processing
-│   │   ├── 💬 views/chat/          # Real-time Chat
-│   │   └── 🎨 views/Splash/        # Splash Screen
-│   ├── 🤖 android/
-│   ├── 🍎 ios/
-│   └── 📦 pubspec.yaml
+├── frontend/RideMatch/              # Flutter Application
+│   ├── lib/
+│   │   ├── main.dart                # Application entry point
+│   │   ├── views/
+│   │   │   ├── auth/                # Authentication screens
+│   │   │   ���── dashboard/           # Main dashboard
+│   │   │   ├── payment/             # Payment interface
+│   │   │   ├── chat/                # Messaging interface
+│   │   │   └── Splash/              # Splash screen
+│   │   ├── models/                  # Data models
+│   │   ├── services/                # API services
+│   │   └── widgets/                 # Reusable components
+│   ├── android/
+│   ├── ios/
+│   └── pubspec.yaml
 │
-├── 🖥️ backend/                     # Node.js Backend
-│   ├── server.js                   # Main Server
-│   ├── 📋 models/                  # MongoDB Schemas
+├── backend/                         # Node.js Server
+│   ├── server.js                    # Server entry point
+│   ├── models/                      # Database schemas
 │   │   ├── user.js
 │   │   ├── Message.js
 │   │   ├── chat.js
 │   │   └── ride.js
-│   ├── 🛣️ routes/                  # API Routes
+│   ├── routes/                      # API endpoints
 │   │   ├── auth.js
 │   │   ├── ride.js
 │   │   ├── booking.js
 │   │   ├── chats.js
 │   │   └── profileRoutes.js
-│   ├── 🎮 controllers/             # Business Logic
-│   ├── 🔒 middleware/              # Auth & Validation
-│   └── ⚙️ config/                  # Configuration
+│   ├── controllers/                 # Business logic
+│   ├── middleware/                  # Authentication & validation
+│   └── config/                      # Configuration files
 │
-└── 📝 package.json                 # Dependencies
+└── package.json
 ```
 
-</div>
+<br/>
+<br/>
 
----
+## 𝗜𝗻𝘀𝘁𝗮𝗹𝗹𝗮𝘁𝗶𝗼��
 
-## 🚀 Installation
+<br/>
 
-<div align="center">
+### 𝗣𝗿𝗲𝗿𝗲𝗾𝘂𝗶𝘀𝗶𝘁𝗲𝘀
 
-### **Prerequisites**
+Ensure you have the following installed:
 
-<p>
-  <a href="https://nodejs.org/en/download/" target="_blank"><img src="https://img.shields.io/badge/Node.js-v16+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js v16+" /></a>
-  <a href="https://docs.flutter.dev/get-started/install" target="_blank"><img src="https://img.shields.io/badge/Flutter-v3.9.2+-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter v3.9.2+" /></a>
-  <a href="https://www.mongodb.com/try/download/community" target="_blank"><img src="https://img.shields.io/badge/MongoDB-Latest-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" /></a>
-  <a href="https://git-scm.com/downloads" target="_blank"><img src="https://img.shields.io/badge/Git-Latest-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" /></a>
-</p>
+• **Node.js** v16 or higher  
+• **Flutter** v3.9.2 or higher  
+• **MongoDB** (local or Atlas account)  
+• **Git**
 
-</div>
+<br/>
 
-### **Step 1: Clone the Repository**
+### 𝗦𝘁𝗲𝗽 𝟭: 𝗖𝗹𝗼𝗻𝗲 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝘆
 
 ```bash
 git clone https://github.com/Va09joshi/Ride_match.git
 cd Ride_match
 ```
 
-### **Step 2: Backend Setup**
+<br/>
+
+### 𝗦𝘁𝗲𝗽 𝟮: 𝗕𝗮𝗰𝗸𝗲𝗻𝗱 𝗦𝗲𝘁𝘂𝗽
 
 ```bash
 # Install dependencies
@@ -219,99 +221,51 @@ npm install
 
 # Create environment file
 cp .env.example .env
-# Edit .env with your configuration
 ```
 
-### **Step 3: Frontend Setup**
+Edit `.env` with your configuration:
+
+```env
+# Database
+MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/ridematch
+
+# Authentication
+JWT_SECRET=your_super_secret_key_minimum_32_characters
+
+# Server
+PORT=5000
+NODE_ENV=development
+
+# Image Upload
+IMGBB_API_KEY=your_imgbb_api_key
+
+# SMS (Optional)
+TWILIO_ACCOUNT_SID=your_twilio_sid
+TWILIO_AUTH_TOKEN=your_twilio_token
+TWILIO_PHONE_NUMBER=+1234567890
+```
+
+<br/>
+
+### 𝗦𝘁𝗲𝗽 𝟯: 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗦𝗲𝘁𝘂𝗽
 
 ```bash
 cd frontend/RideMatch
 
-# Get Flutter packages
+# Get dependencies
 flutter pub get
 
 # Generate launcher icons (optional)
 flutter pub run flutter_launcher_icons:main
 ```
 
----
+<br/>
 
-## ⚙️ Configuration
+### 𝗦𝘁𝗲𝗽 𝟰: 𝗖𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗲 𝗚𝗼𝗼𝗴𝗹𝗲 𝗠𝗮𝗽𝘀 𝗔𝗣𝗜
 
-<div align="center">
+**Android**
 
-### **Required API Keys & Accounts**
-
-<table>
-<tr>
-<td align="center">
-
-🗄️ **[MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)**<br/>
-Database hosting
-
-</td>
-<td align="center">
-
-🗺️ **[Google Maps API](https://console.cloud.google.com/)**<br/>
-Maps & Geolocation
-
-</td>
-<td align="center">
-
-💳 **[Razorpay](https://dashboard.razorpay.com/signup)**<br/>
-Payment Gateway
-
-</td>
-</tr>
-<tr>
-<td align="center">
-
-🖼️ **[ImgBB API](https://api.imgbb.com/)**<br/>
-Image Uploads
-
-</td>
-<td align="center">
-
-📱 **[Twilio](https://www.twilio.com/try-twilio)** *(Optional)*<br/>
-SMS Notifications
-
-</td>
-<td align="center">
-
-🔐 **JWT Secret**<br/>
-Generate Random Key
-
-</td>
-</tr>
-</table>
-
-</div>
-
-### **Environment Variables (`.env`)**
-
-```env
-# 🗄️ Database
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/ridematch
-
-# 🔐 Authentication
-JWT_SECRET=your_super_secret_key_here_min_32_characters
-
-# 🌐 Server
-PORT=5000
-NODE_ENV=development
-
-# 📱 Twilio (Optional)
-TWILIO_ACCOUNT_SID=your_twilio_sid
-TWILIO_AUTH_TOKEN=your_twilio_token
-TWILIO_PHONE_NUMBER=+1234567890
-
-# 🖼️ Image Upload
-IMGBB_API_KEY=your_imgbb_api_key
-```
-
-### **Google Maps Setup**
-
-**Android:** `android/app/src/main/AndroidManifest.xml`
+Edit `android/app/src/main/AndroidManifest.xml`:
 
 ```xml
 <meta-data
@@ -319,235 +273,181 @@ IMGBB_API_KEY=your_imgbb_api_key
     android:value="YOUR_GOOGLE_MAPS_API_KEY"/>
 ```
 
-**iOS:** `ios/Runner/AppDelegate.swift`
+**iOS**
+
+Edit `ios/Runner/AppDelegate.swift`:
 
 ```swift
 GMSServices.provideAPIKey("YOUR_GOOGLE_MAPS_API_KEY")
 ```
 
----
+<br/>
 
-## 🏃 Running the Application
+### 𝗦𝘁𝗲𝗽 𝟱: 𝗥𝗲𝗾𝘂𝗶𝗿𝗲𝗱 𝗔𝗣𝗜 𝗞𝗲𝘆𝘀
 
-<div align="center">
+You'll need accounts and API keys for:
 
-### **Backend Server**
+• **MongoDB Atlas** — Database hosting ([Sign up](https://www.mongodb.com/cloud/atlas/register))  
+• **Google Maps API** — Maps and geolocation ([Get API key](https://console.cloud.google.com/))  
+• **Razorpay** — Payment processing ([Sign up](https://dashboard.razorpay.com/signup))  
+• **ImgBB** — Image hosting ([Get API key](https://api.imgbb.com/))  
+• **Twilio** (Optional) — SMS notifications ([Sign up](https://www.twilio.com/try-twilio))
+
+<br/>
+<br/>
+
+## 𝗥𝘂𝗻𝗻𝗶𝗻𝗴 𝘁𝗵𝗲 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻
+
+<br/>
+
+### 𝗦𝘁𝗮𝗿𝘁 𝗕𝗮𝗰𝗸𝗲𝗻𝗱 𝗦𝗲𝗿𝘃𝗲𝗿
 
 ```bash
-# Development mode with auto-reload
+# Development mode (with auto-reload)
 npm run dev
 
 # Production mode
 npm start
 ```
 
-🌐 Server runs on: **[http://localhost:5000](http://localhost:5000)**
+Server will be available at `http://localhost:5000`
 
----
+<br/>
 
-### **Flutter Mobile App**
+### 𝗦𝘁𝗮𝗿𝘁 𝗙𝗹𝘂𝘁𝘁𝗲𝗿 𝗔𝗽𝗽
 
 ```bash
 cd frontend/RideMatch
 
-# Android
+# Run on Android
 flutter run -d android
 
-# iOS
+# Run on iOS
 flutter run -d ios
 
-# Web
+# Run on Web
 flutter run -d chrome
 ```
 
-</div>
+<br/>
+<br/>
 
----
+## 𝗔𝗣𝗜 𝗗𝗼𝗰𝘂𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻
 
-## 🌐 API Documentation
+<br/>
 
-<div align="center">
+### 𝗔𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗶𝗼𝗻
 
-### **🔐 Authentication Endpoints**
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| POST | `/api/auth/register` | Register new user | No |
+| POST | `/api/auth/login` | User login | No |
+| GET | `/api/auth/me` | Get current user | Yes |
+| POST | `/api/auth/logout` | Logout user | Yes |
 
-| Method | Endpoint | Description | Auth Required |
-|:------:|:---------|:------------|:-------------:|
-| `POST` | `/api/auth/register` | Register new user | ❌ |
-| `POST` | `/api/auth/login` | Login existing user | ❌ |
-| `GET` | `/api/auth/me` | Get current user profile | ✅ |
-| `POST` | `/api/auth/logout` | Logout user | ✅ |
+<br/>
 
-### **🚗 Ride Management**
+### 𝗥𝗶𝗱𝗲 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁
 
-| Method | Endpoint | Description | Auth Required |
-|:------:|:---------|:------------|:-------------:|
-| `POST` | `/api/rides/create` | Create new ride | ✅ |
-| `GET` | `/api/rides/search` | Search available rides | ✅ |
-| `GET` | `/api/rides/:id` | Get ride details | ✅ |
-| `PUT` | `/api/rides/:id` | Update ride info | ✅ |
-| `DELETE` | `/api/rides/:id` | Cancel ride | ✅ |
-| `POST` | `/api/rides/:id/like` | Like/Save ride | ✅ |
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| POST | `/api/rides/create` | Create new ride | Yes |
+| GET | `/api/rides/search` | Search available rides | Yes |
+| GET | `/api/rides/:id` | Get ride details | Yes |
+| PUT | `/api/rides/:id` | Update ride | Yes |
+| DELETE | `/api/rides/:id` | Cancel ride | Yes |
+| POST | `/api/rides/:id/like` | Save ride | Yes |
 
-### **📅 Booking System**
+<br/>
 
-| Method | Endpoint | Description | Auth Required |
-|:------:|:---------|:------------|:-------------:|
-| `POST` | `/api/bookings/create` | Book a ride | ✅ |
-| `GET` | `/api/bookings/user/:userId` | Get user bookings | ✅ |
-| `PUT` | `/api/bookings/:id/status` | Update booking status | ✅ |
-| `DELETE` | `/api/bookings/:id` | Cancel booking | ✅ |
+### 𝗕𝗼𝗼𝗸𝗶𝗻𝗴 𝗦𝘆𝘀𝘁𝗲𝗺
 
-### **💬 Chat & Messaging**
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| POST | `/api/bookings/create` | Book a ride | Yes |
+| GET | `/api/bookings/user/:userId` | Get user bookings | Yes |
+| PUT | `/api/bookings/:id/status` | Update booking status | Yes |
+| DELETE | `/api/bookings/:id` | Cancel booking | Yes |
 
-| Method | Endpoint | Description | Auth Required |
-|:------:|:---------|:------------|:-------------:|
-| `GET` | `/api/chat/:userId` | Get user chats | ✅ |
-| `GET` | `/api/chathistory/:chatId` | Get chat messages | ✅ |
-| `POST` | `/api/messages/send` | Send message | ✅ |
-| `DELETE` | `/api/messages/:id` | Delete message | ✅ |
+<br/>
 
-### **👤 User Profile**
+### 𝗖𝗵𝗮𝘁 & 𝗠𝗲𝘀𝘀𝗮𝗴𝗶𝗻𝗴
 
-| Method | Endpoint | Description | Auth Required |
-|:------:|:---------|:------------|:-------------:|
-| `GET` | `/api/profile/:userId` | Get user profile | ✅ |
-| `PUT` | `/api/profile/update` | Update profile | ✅ |
-| `POST` | `/api/profile/upload-image` | Upload profile picture | ✅ |
-| `DELETE` | `/api/profile/delete-account` | Delete account | ✅ |
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| GET | `/api/chat/:userId` | Get user conversations | Yes |
+| GET | `/api/chathistory/:chatId` | Get message history | Yes |
+| POST | `/api/messages/send` | Send message | Yes |
+| DELETE | `/api/messages/:id` | Delete message | Yes |
 
-### **🔔 Notifications**
+<br/>
 
-| Method | Endpoint | Description | Auth Required |
-|:------:|:---------|:------------|:-------------:|
-| `GET` | `/api/notifications/:userId` | Get notifications | ✅ |
-| `PUT` | `/api/notifications/:id/read` | Mark as read | ✅ |
-| `DELETE` | `/api/notifications/:id` | Delete notification | ✅ |
+### 𝗨𝘀𝗲𝗿 𝗣𝗿𝗼𝗳𝗶𝗹𝗲
 
-### **⭐ Ratings & Reviews**
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| GET | `/api/profile/:userId` | Get user profile | Yes |
+| PUT | `/api/profile/update` | Update profile | Yes |
+| POST | `/api/profile/upload-image` | Upload profile picture | Yes |
+| DELETE | `/api/profile/delete-account` | Delete account | Yes |
 
-| Method | Endpoint | Description | Auth Required |
-|:------:|:---------|:------------|:-------------:|
-| `POST` | `/api/reviews/create` | Submit review | ✅ |
-| `GET` | `/api/reviews/:userId` | Get user reviews | ✅ |
-| `PUT` | `/api/reviews/:id` | Update review | ✅ |
+<br/>
 
-</div>
+### 𝗡𝗼𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀
 
----
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| GET | `/api/notifications/:userId` | Get notifications | Yes |
+| PUT | `/api/notifications/:id/read` | Mark as read | Yes |
+| DELETE | `/api/notifications/:id` | Delete notification | Yes |
 
-## 📦 Key Dependencies
+<br/>
 
-<div align="center">
+### 𝗥𝗮𝘁𝗶𝗻𝗴𝘀 & 𝗥𝗲𝘃𝗶𝗲𝘄𝘀
 
-### **Flutter Packages**
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| POST | `/api/reviews/create` | Submit review | Yes |
+| GET | `/api/reviews/:userId` | Get user reviews | Yes |
+| PUT | `/api/reviews/:id` | Update review | Yes |
 
-```yaml
-dependencies:
-  google_maps_flutter: ^2.6.0      # 🗺️ Maps Integration
-  geolocator: ^14.0.2              # 📍 Location Services
-  socket_io_client: ^3.1.2         # 💬 Real-time Chat
-  razorpay_flutter: ^1.3.0         # 💳 Payment Gateway
-  shared_preferences: ^2.5.3       # 💾 Local Storage
-  http: ^1.5.0                     # 🌐 HTTP Requests
-  image_picker: ^1.1.2             # 📸 Image Selection
-  lottie: ^3.3.2                   # 🎬 Animations
-  flutter_rating_bar: ^4.0.1       # ⭐ Rating Widget
-  cached_network_image: ^3.4.1     # 🖼️ Image Caching
+<br/>
+<br/>
+
+## 𝗕𝘂𝗶𝗹𝗱 𝗳𝗼𝗿 𝗣𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻
+
+<br/>
+
+### 𝗔𝗻𝗱𝗿𝗼𝗶𝗱
+
+```bash
+# APK build
+flutter build apk --release
+
+# App Bundle (recommended for Play Store)
+flutter build appbundle --release
 ```
 
-### **NPM Packages**
+<br/>
 
-```json
-{
-  "express": "^4.18.2",            // 🌐 Web Framework
-  "mongoose": "^7.6.0",            // 🗄️ MongoDB ODM
-  "socket.io": "^4.7.2",           // 💬 WebSockets
-  "jsonwebtoken": "^9.0.2",        // 🔐 JWT Auth
-  "bcryptjs": "^2.4.3",            // 🔒 Password Hashing
-  "multer": "^1.4.5",              // 📤 File Uploads
-  "dotenv": "^16.3.1",             // ⚙️ Environment Vars
-  "cors": "^2.8.5"                 // 🌍 CORS Handling
-}
+### 𝗶𝗢𝗦
+
+```bash
+flutter build ios --release
 ```
 
-</div>
+<br/>
+<br/>
 
----
+## 𝗧𝗲𝘀𝘁𝗶𝗻𝗴
 
-## 🎨 Screenshots
-
-<div align="center">
-
-> *Screenshots coming soon! 📸*
-
-| Login Screen | Dashboard | Ride Search |
-|:------------:|:---------:|:-----------:|
-| Coming Soon  | Coming Soon | Coming Soon |
-
-| Live Chat | Payment | Profile |
-|:---------:|:-------:|:-------:|
-| Coming Soon | Coming Soon | Coming Soon |
-
-</div>
-
----
-
-## 🤝 Contributing
-
-<div align="center">
-
-We love contributions! 💙
-
-**[Report Bug](https://github.com/Va09joshi/Ride_match/issues)** • **[Request Feature](https://github.com/Va09joshi/Ride_match/issues)** • **[Submit PR](https://github.com/Va09joshi/Ride_match/pulls)**
-
-</div>
-
-### **How to Contribute**
-
-1. **Fork** the repository
-2. **Clone** your fork
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/Ride_match.git
-   ```
-3. **Create** a feature branch
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-4. **Commit** your changes
-   ```bash
-   git commit -m '✨ Add some AmazingFeature'
-   ```
-5. **Push** to the branch
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-6. **Open** a Pull Request
-
-<div align="center">
-
-### **Commit Convention**
-
-| Type | Emoji | Description |
-|:----:|:-----:|:------------|
-| `feat` | ✨ | New feature |
-| `fix` | 🐛 | Bug fix |
-| `docs` | 📝 | Documentation |
-| `style` | 💄 | Code style |
-| `refactor` | ♻️ | Code refactoring |
-| `test` | ✅ | Tests |
-| `chore` | 🔧 | Maintenance |
-
-</div>
-
----
-
-## 🧪 Testing
+<br/>
 
 ```bash
 # Backend tests
 npm test
 
-# Flutter tests
+# Flutter unit tests
 cd frontend/RideMatch
 flutter test
 
@@ -555,192 +455,151 @@ flutter test
 flutter test integration_test/
 ```
 
----
+<br/>
+<br/>
 
-## 📦 Build for Production
+## 𝗖𝗼𝗻𝘁𝗿𝗶𝗯𝘂𝘁𝗶𝗻𝗴
 
-### **Android APK**
+<br/>
 
+Contributions are welcome! Here's how you can help:
+
+<br/>
+
+### 𝗚𝗲𝘁𝘁𝗶𝗻𝗴 𝗦𝘁𝗮𝗿𝘁𝗲𝗱
+
+**1. Fork the repository**
+
+**2. Clone your fork**
 ```bash
-flutter build apk --release
+git clone https://github.com/YOUR_USERNAME/Ride_match.git
 ```
 
-### **Android App Bundle**
-
+**3. Create a feature branch**
 ```bash
-flutter build appbundle --release
+git checkout -b feature/amazing-feature
 ```
 
-### **iOS**
+**4. Make your changes**
 
+**5. Commit with a descriptive message**
 ```bash
-flutter build ios --release
+git commit -m "Add amazing feature"
 ```
 
----
+**6. Push to your fork**
+```bash
+git push origin feature/amazing-feature
+```
 
-## 📄 License
+**7. Open a Pull Request**
+
+<br/>
+
+### 𝗖𝗼𝗺𝗺𝗶𝘁 𝗖𝗼𝗻𝘃𝗲𝗻𝘁𝗶𝗼𝗻
+
+• `feat:` New feature  
+• `fix:` Bug fix  
+• `docs:` Documentation changes  
+• `style:` Code style/formatting  
+• `refactor:` Code refactoring  
+• `test:` Test updates  
+• `chore:` Maintenance tasks
+
+<br/>
+
+### 𝗥𝗲𝗽𝗼𝗿𝘁𝗶𝗻𝗴 𝗜𝘀𝘀𝘂𝗲𝘀
+
+Found a bug or have a suggestion? [Open an issue](https://github.com/Va09joshi/Ride_match/issues) with:
+
+• Clear description of the problem  
+• Steps to reproduce (for bugs)  
+• Expected vs actual behavior  
+• Screenshots if applicable  
+• Environment details (OS, Flutter version, etc.)
+
+<br/>
+<br/>
+
+## 𝗥𝗼𝗮𝗱𝗺𝗮𝗽
+
+<br/>
+
+### 𝗨𝗽𝗰𝗼𝗺𝗶𝗻𝗴 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀
+
+• AI-powered ride matching algorithm  
+• Multi-language support  
+• Loyalty rewards program  
+• Advanced analytics dashboard  
+• Traffic-aware routing  
+• Enhanced security features  
+• Smartwatch companion app  
+• Gamification elements  
+• International expansion  
+• Accessibility improvements
+
+<br/>
+<br/>
+
+## 𝗟𝗶𝗰𝗲𝗻𝘀𝗲
+
+<br/>
+
+This project is licensed under the ISC License. See [LICENSE](LICENSE) for details.
+
+<br/>
+<br/>
+
+## 𝗔𝘂𝘁𝗵𝗼𝗿
+
+<br/>
 
 <div align="center">
 
-This project is licensed under the **ISC License**
+**Vaibhav Joshi**
 
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg?style=for-the-badge)](LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-Va09joshi-181717?style=flat-square&logo=github)](https://github.com/Va09joshi)
+[![Repository](https://img.shields.io/badge/Repository-Ride__match-02569B?style=flat-square&logo=github)](https://github.com/Va09joshi/Ride_match)
 
 </div>
 
----
+<br/>
+<br/>
 
-## 👨‍💻 Author
+## 𝗔𝗰𝗸𝗻𝗼𝘄𝗹𝗲𝗱𝗴𝗺𝗲𝗻𝘁𝘀
 
-<div align="center">
+<br/>
 
-<img src="https://github.com/Va09joshi.png" width="100" style="border-radius: 50%;" alt="Va09joshi"/>
+Built with these amazing technologies:
 
-### **Vaibhav Joshi**
+• **Flutter** — UI framework  
+• **Socket.IO** — Real-time engine  
+• **MongoDB** — Database  
+• **Google Maps** — Mapping services  
+• **Razorpay** — Payment gateway  
+• **Node.js** — Backend runtime
 
-[![GitHub](https://img.shields.io/badge/GitHub-Va09joshi-181717?style=for-the-badge&logo=github)](https://github.com/Va09joshi)
-[![Repository](https://img.shields.io/badge/Repository-Ride__match-02569B?style=for-the-badge&logo=github)](https://github.com/Va09joshi/Ride_match)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/Va09joshi)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail)](mailto:your.email@example.com)
-
-</div>
-
----
-
-## 🌟 Acknowledgments
+<br/>
+<br/>
 
 <div align="center">
 
-Special thanks to these amazing technologies and communities:
-
-<table>
-<tr>
-<td align="center">
-  <a href="https://flutter.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/>
-  </a><br/>
-  <b>Flutter Team</b>
-</td>
-<td align="center">
-  <a href="https://socket.io" target="_blank">
-    <img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotio&logoColor=white" alt="Socket.io"/>
-  </a><br/>
-  <b>Socket.IO</b>
-</td>
-<td align="center">
-  <a href="https://www.mongodb.com" target="_blank">
-    <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
-  </a><br/>
-  <b>MongoDB</b>
-</td>
-</tr>
-<tr>
-<td align="center">
-  <a href="https://developers.google.com/maps" target="_blank">
-    <img src="https://img.shields.io/badge/Google_Maps-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Google Maps"/>
-  </a><br/>
-  <b>Google Maps</b>
-</td>
-<td align="center">
-  <a href="https://razorpay.com" target="_blank">
-    <img src="https://img.shields.io/badge/Razorpay-02042B?style=for-the-badge&logo=razorpay&logoColor=3395FF" alt="Razorpay"/>
-  </a><br/>
-  <b>Razorpay</b>
-</td>
-<td align="center">
-  <a href="https://nodejs.org" target="_blank">
-    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-  </a><br/>
-  <b>Node.js</b>
-</td>
-</tr>
-</table>
-
-</div>
-
 ---
 
-## 📞 Support
+<br/>
 
-<div align="center">
+**Made with Flutter & Node.js**
 
-Need help? We're here for you!
+*Empowering sustainable transportation, one ride at a time*
 
-[![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-red?style=for-the-badge&logo=github)](https://github.com/Va09joshi/Ride_match/issues)
-[![Discussions](https://img.shields.io/badge/GitHub-Discussions-purple?style=for-the-badge&logo=github)](https://github.com/Va09joshi/Ride_match/discussions)
-[![Documentation](https://img.shields.io/badge/Read-Documentation-blue?style=for-the-badge&logo=readthedocs)](https://github.com/Va09joshi/Ride_match/wiki)
+<br/>
 
-### **Community**
+![GitHub repo size](https://img.shields.io/github/repo-size/Va09joshi/Ride_match?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/Va09joshi/Ride_match?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/Va09joshi/Ride_match?style=flat-square)
 
-[![Discord](https://img.shields.io/badge/Discord-Join_Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-server)
-[![Slack](https://img.shields.io/badge/Slack-Join_Workspace-4A154B?style=for-the-badge&logo=slack)](https://join.slack.com/your-workspace)
+<br/>
 
-</div>
-
----
-
-## 📈 Project Stats
-
-<div align="center">
-
-![GitHub repo size](https://img.shields.io/github/repo-size/Va09joshi/Ride_match?style=for-the-badge&logo=github)
-![GitHub language count](https://img.shields.io/github/languages/count/Va09joshi/Ride_match?style=for-the-badge&logo=github)
-![GitHub top language](https://img.shields.io/github/languages/top/Va09joshi/Ride_match?style=for-the-badge&logo=dart)
-![GitHub last commit](https://img.shields.io/github/last-commit/Va09joshi/Ride_match?style=for-the-badge&logo=github)
-![GitHub issues](https://img.shields.io/github/issues/Va09joshi/Ride_match?style=for-the-badge&logo=github)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/Va09joshi/Ride_match?style=for-the-badge&logo=github)
-![GitHub forks](https://img.shields.io/github/forks/Va09joshi/Ride_match?style=for-the-badge&logo=github)
-![GitHub stars](https://img.shields.io/github/stars/Va09joshi/Ride_match?style=for-the-badge&logo=github)
-![GitHub watchers](https://img.shields.io/github/watchers/Va09joshi/Ride_match?style=for-the-badge&logo=github)
-
-</div>
-
----
-
-## 🗺️ Roadmap
-
-<div align="center">
-
-### **Upcoming Features**
-
-- [ ] 🤖 AI-powered ride matching algorithm
-- [ ] 🌐 Multi-language support
-- [ ] 🎫 Loyalty rewards system
-- [ ] 📊 Advanced analytics dashboard
-- [ ] 🚦 Traffic-aware routing
-- [ ] 🔒 Enhanced security features
-- [ ] 📱 Smartwatch companion app
-- [ ] 🎮 Gamification elements
-- [ ] 🌍 International expansion
-- [ ] ♿ Accessibility improvements
-
-[View Full Roadmap →](https://github.com/Va09joshi/Ride_match/projects)
-
-</div>
-
----
-
-<div align="center">
-
-### **⭐ Star this repository if you find it helpful!**
-
-[![Star on GitHub](https://img.shields.io/github/stars/Va09joshi/Ride_match?style=social)](https://github.com/Va09joshi/Ride_match)
-[![Fork on GitHub](https://img.shields.io/github/forks/Va09joshi/Ride_match?style=social)](https://github.com/Va09joshi/Ride_match/fork)
-[![Watch on GitHub](https://img.shields.io/github/watchers/Va09joshi/Ride_match?style=social)](https://github.com/Va09joshi/Ride_match)
-
----
-
-<p align="center">
-  <b>Made with ❤️ using Flutter & Node.js</b>
-</p>
-
-<p align="center">
-  <i>Empowering sustainable transportation, one ride at a time 🌱</i>
-</p>
-
----
-
-<sub>© 2026 RideMatch. All rights reserved.</sub>
+© 2026 RideMatch. All rights reserved.
 
 </div>
