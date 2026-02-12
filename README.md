@@ -1,11 +1,21 @@
-# RideMatch
+<div align="center">
 
-> A modern full-stack ridesharing platform with real-time chat, live tracking, and smart ride matching
+<img src="https://github.com/user-attachments/assets/cc7223e8-911d-4066-bb1e-eac31e4cb37f" alt="RideMatch Banner" width="280"/>
 
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)](https://flutter.dev)  
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org)  
-[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)](https://mongodb.com)  
-[![License](https://img.shields.io/github/license/Va09joshi/Ride_match?style=flat-square)](LICENSE)
+<br><br>
+
+### A modern full-stack ridesharing platform  
+Real-time chat • Live tracking • Smart ride matching
+
+<br>
+
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://mongodb.com)
+[![License](https://img.shields.io/github/license/Va09joshi/Ride_match?style=for-the-badge)](LICENSE)
+
+</div>
+
 
 ---
 
